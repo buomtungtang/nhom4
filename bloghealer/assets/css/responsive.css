@@ -1,0 +1,244 @@
+@charset "utf-8";
+
+/*  */
+@media(min-width:1024px){
+    .trending-card .post--image-represent img{
+        height: 150px;
+    }
+}
+/* Tablet - Medium PC */
+@media (min-width:768px) and (max-width:1023px) {
+    .hideOnMPc {
+        display: none;
+    }
+
+    .box--cushion-navbar {
+        margin-top: 2.875rem;
+    }
+
+    .wrapper__head {
+        padding: 1.25rem 0;
+    }
+
+    /* responsive trending post */
+    .trending-container {
+        flex-wrap: wrap;
+    }
+
+    .trending-card {
+        width: calc(100% / 2);
+    }
+
+    .trending-card:nth-of-type(1),
+    .trending-card:nth-of-type(2) {
+        margin-bottom: .75rem;
+    }
+
+    .topic {
+        display: block;
+    }
+
+    .post .detail-avatar {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .write-post--container {
+        max-width: 600px;
+    }
+
+    .page__post .auth-container,
+    .page__post .post--content {
+        max-width: 600px;
+    }
+}
+
+/* Tablet and Mobile */
+@media (max-width: 767px) {
+    .showOnTabletAndMobile {
+        display: flex;
+    }
+
+    .wrapper__head {
+        padding: 1.25rem 0;
+    }
+
+    .trending-container {
+        flex-direction: column;
+    }
+
+    .trending-card {
+        width: 100%;
+        flex-direction: row;
+        margin-bottom: 1.5rem;
+        padding: 0;
+    }
+
+    .details-breif {
+        margin-top: 0;
+    }
+
+    .trending-card .details-breif {
+        flex-grow: 1;
+        margin-left: 1.25rem;
+    }
+
+    .navbar-title {
+        margin-bottom: .5rem;
+    }
+
+    .navbar--post h2 {
+        font-size: .9375rem;
+        max-height: 2.75rem;
+    }
+
+    .topic {
+        display: block;
+    }
+
+    .post .detail-avatar {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .page__post .auth-container {
+        max-width: max-content;
+    }
+
+    .dropdown--content .item-mobile {
+        display: block;
+    }
+}
+
+/* tablet */
+@media (min-width:600px) and (max-width: 767px) {
+    .hideOnTablet {
+        display: none;
+    }
+
+    .navbar__brand {
+        max-width: 2.5rem;
+    }
+
+    .box--cushion-navbar {
+        margin-top: 2.875rem;
+    }
+
+    .trending-card {
+        min-height: 6rem;
+    }
+
+    .trending-card .post--image-represent {
+        min-width: 8.5rem;
+        max-width: 9.125rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .navbar__brand {
+        max-width: 2.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .showOnMobile {
+        display: block;
+    }
+
+    .box--cushion-navbar {
+        margin-top: 2.875rem;
+    }
+
+    .trending-card {
+        /* height:7.375rem; */
+    }
+
+    .trending-card .post--image-represent {
+        max-width: 8.375rem;
+    }
+
+    #form-signup {
+        max-width: 400px;
+    }
+}
+
+/* responsive main post 640px - 767px */
+@media (max-width: 767px) {
+    .post {
+        flex-direction: column;
+    }
+
+    .post .post--image-represent {
+        width: 12rem;
+    }
+
+    .post .topicName,
+    .post .readingTime::before {
+        display: none;
+    }
+
+    .post .readingTime {
+        margin-left: 0;
+    }
+
+    .post .details-breif {
+        margin-left: 0;
+        margin-top: .5rem;
+    }
+}
+
+/* responsive main post 0 -639px */
+@media (max-width: 639px) {
+    .post .post--image-represent {
+        max-width: 100%;
+    }
+
+    .write-post--container {
+        padding: .9375rem .625rem;
+    }
+}
+
+/* responsive footer 0 - 1023px */
+@media (max-width:1023px) {
+    .footer__container {
+        max-width: 45rem;
+    }
+
+    footer.footer {
+        padding: 1.25rem;
+    }
+
+    .footer--top {
+        flex-wrap: wrap;
+        padding-bottom: 0;
+    }
+
+    .footer--top-menu {
+        margin-top: 1.625rem;
+        justify-content: start;
+    }
+
+    .footer--bottom {
+        padding-top: 1rem;
+    }
+
+    .banner-top .banner {
+        height: 6.875rem;
+        width: 100%;
+    }
+
+    .auth-container .details .avatar {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .search {
+        top: 68px;
+    }
+}

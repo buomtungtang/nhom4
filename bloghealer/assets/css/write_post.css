@@ -1,0 +1,227 @@
+@charset "utf-8";
+
+html {
+    font-family: "Montserrat", "Raleway", sans-serif;
+}
+
+header {
+    box-shadow: none;
+}
+
+.box--cushion-navbar {
+    margin-top: 4.25rem;
+    padding: 0;
+}
+
+.page__write-post {
+    margin: .625rem 0;
+}
+
+.write-post--container {
+    padding: 1.5625rem 1.875rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.page__write-post .write-post--container .title {
+    font-size: 1.875rem;
+    line-height: 3rem;
+    margin: 0 0 1rem;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    height: auto;
+}
+
+.page__write-post .write-post--container .title::placeholder {
+    color: #c4c4c4;
+    content: attr(placeholder);
+}
+
+.page__write-post .write-post--container .title:empty::before {
+    color: #c4c4c4;
+    content: attr(placeholder);
+}
+
+.write-post--content {
+    padding-bottom: 300px;
+}
+
+.write-post--content .content {
+    font-size: 1.0625rem;
+    font-weight: 400;
+    line-height: 2rem;
+    margin: 0 0 1.25rem;
+    color: rgba(0, 0, 0, .8);
+    outline: none;
+}
+
+.write-post--content .content::placeholder {
+    color: #c4c4c4;
+    content: attr(placeholder);
+}
+
+.write-post--content .content:empty::before {
+    color: #c4c4c4;
+    content: attr(placeholder);
+}
+
+.write-post--content:empty::after {
+    content: "\feff ";
+}
+
+/* style btn */
+.next-step {
+    padding: 1rem 2rem;
+    font-size: 1em;
+    font-family: "Noto-sans", sans-serif;
+    position: fixed;
+    bottom: .5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    z-index: 10;
+}
+
+.next-step .btn {
+    border: 1px solid #e3e3e3;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.next-step button {
+    margin-right: .5rem;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.page__write-post .btn-draft {
+    color: #999;
+    background-color: #fafafa;
+
+}
+
+.page__write-post .btn-workthrough {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+/* design overlay front */
+.overlay-front {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, .5);
+    backdrop-filter: blur(.9375rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.overlay-front--box {
+    width: 650px;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.overlay-front--box .post-option {
+    padding: .75rem 0;
+    color: #4a5568;
+}
+
+.overlay-front--title {
+    margin-bottom: .5rem;
+    font-weight: 700;
+    font-size: .75rem;
+    font-family: "Noto-sans", sans-serif;
+}
+
+.post-option .input {
+    width: 100%;
+    padding: .75rem 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: .25rem;
+    -webkit-border-radius: .25rem;
+    -moz-border-radius: .25rem;
+    -ms-border-radius: .25rem;
+    -o-border-radius: .25rem;
+    resize: none;
+    color: inherit;
+    outline: none;
+}
+
+.post-option .input-se {
+    padding: .75rem 2rem .75rem 1rem;
+    background-color: rgb(237, 242, 247);
+
+}
+
+.input[name="texOfPost"] {
+    overflow-y: auto;
+}
+
+.input[name="texOfPost"]::-webkit-scrollbar {
+    width: .625rem;
+}
+
+.input[name="texOfPost"]::-webkit-scrollbar-thumb {
+    border-radius: .625rem;
+    -webkit-border-radius: .625rem;
+    -moz-border-radius: .625rem;
+    -ms-border-radius: .625rem;
+    -o-border-radius: .625rem;
+    height: 1.875rem;
+    background-color: rgb(203, 213, 224);
+}
+
+.input[name="texOfPost"]::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(158, 166, 174);
+}
+
+.input[name="texOfPost"]::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+.overlay-front .input-se option {
+    padding: .75rem 2rem .75rem 1rem;
+    width: 100%;
+}
+
+.modal-footer {
+    padding: .75rem 0;
+    justify-content: center;
+}
+
+.modal-footer .btn {
+    max-width: 9rem;
+    width: 100%;
+    margin: 0 5px;
+    border: 1px solid #e3e3e3;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.modal-footer .btn-comeback {
+    color: #34495e;
+}
+
+/* more */
+input[name="postImage"]{
+    padding-bottom: .75rem;
+}

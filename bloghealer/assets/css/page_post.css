@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+.page__post {
+    margin-top: 8rem;
+    font-weight: 400;
+    color: #34495e;
+}
+
+.page__post .auth-container {
+    max-width: 650px;
+    margin-top: 1rem;
+    padding: .9375rem .625rem;
+}
+
+.auth-container .banner {
+    width: 100%;
+}
+
+.auth-container .category {
+    margin: 3rem 0 5px;
+    font-size: .875em;
+    color: rgb(113, 128, 150);
+}
+
+.auth-container .title {
+    font-size: 2.625rem;
+    line-height: 3.625rem;
+    color: rgb(45, 55, 72);
+}
+
+.auth-container .description {
+    margin: .3125rem 0;
+    font-size: 1rem;
+    color: rgb(160, 174, 192);
+    font-style: italic;
+}
+
+.auth-container .details {
+    margin-top: 1.5rem;
+}
+
+.auth-container .details .avatar {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.auth-container .details .avatar img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.auth-container .details .author-info {
+    margin: 0 .625rem;
+    display: flex;
+    flex-direction: column;
+    font-size: .875rem;
+}
+
+.auth-container .details .author-info .username {
+    margin-left: 3px;
+    color: #0000ee;
+
+}
+
+.auth-container .details .author-info .createdAt {
+    margin-left: 3px;
+    font-size: .8125rem;
+    line-height: 1.0625rem;
+    color: rgb(160, 174, 192);
+}
+
+.auth-container .details .author-info .createdAt::before {
+    display: none;
+}
+
+.page__post .post-container {
+    margin-top: .625rem;
+}
+
+.page__post .post--content {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.post--content figure {
+    margin-bottom: 1.25rem;
+}
+
+figure figcaption {
+    text-align: center;
+    font-size: .875rem;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: .9375rem;
+}
